@@ -5,21 +5,21 @@
 class Unregex < Formula
   desc "A tool to visualize and explain regular expressions"
   homepage "https://github.com/weslien/unregex"
-  version "0.2.0"
+  version "0.2.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/weslien/unregex/releases/download/v0.2.0/unregex_0.2.0_darwin_amd64.tar.gz"
-      sha256 "a5b70d462a690c9e3308f35c7fcfec8fa191403bab8aa2229e229669777cfe7a"
+      url "https://github.com/weslien/unregex/releases/download/v0.2.2/unregex_0.2.2_darwin_amd64.tar.gz"
+      sha256 "70306b0c271cc50e2feeb5e44394f683b6d7fd54a55e5f3a753d84cab4d0fd4c"
 
       def install
         bin.install "unregex"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/weslien/unregex/releases/download/v0.2.0/unregex_0.2.0_darwin_arm64.tar.gz"
-      sha256 "2c9817fb170b776eee442b448467923a0d126aeffa07d8edaa1369728d6bdf64"
+      url "https://github.com/weslien/unregex/releases/download/v0.2.2/unregex_0.2.2_darwin_arm64.tar.gz"
+      sha256 "cd0854082a2c4e72807f4422b71d544fcc423152ac87bf947ec970a115c3a27c"
 
       def install
         bin.install "unregex"
@@ -30,8 +30,8 @@ class Unregex < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/weslien/unregex/releases/download/v0.2.0/unregex_0.2.0_linux_amd64.tar.gz"
-        sha256 "4e4b9316877f15d44047cbdbc5c7202a45eb04ccaaa10530e4cac5c739ae4f24"
+        url "https://github.com/weslien/unregex/releases/download/v0.2.2/unregex_0.2.2_linux_amd64.tar.gz"
+        sha256 "bfa863156d5fab61e13ab2d2025cc8d6761a577174053ed611ac8c9d2ca8b1d0"
 
         def install
           bin.install "unregex"
@@ -40,8 +40,8 @@ class Unregex < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/weslien/unregex/releases/download/v0.2.0/unregex_0.2.0_linux_arm64.tar.gz"
-        sha256 "f1e39058da072cbe67312d515f489288fffab53434ae96561e308aa819a5ca3f"
+        url "https://github.com/weslien/unregex/releases/download/v0.2.2/unregex_0.2.2_linux_arm64.tar.gz"
+        sha256 "afb296d092e03c0fffd94a4cd6721619e4ae6a8472210540aba5d839aba4fb45"
 
         def install
           bin.install "unregex"
