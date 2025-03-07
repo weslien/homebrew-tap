@@ -5,21 +5,21 @@
 class Tempural < Formula
   desc "CLI for temporal stuff"
   homepage "https://github.com/weslien/tempural"
-  version "0.0.2"
+  version "0.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/weslien/tempural/releases/download/v0.0.2/tempural_0.0.2_darwin_amd64.tar.gz"
-      sha256 "6cac8ce2c7cc3f2aeca13aa1baadc8c07356f522b309df7acdf9031bc7a5f478"
+      url "https://github.com/weslien/tempural/releases/download/v0.0.3/tempural_0.0.3_darwin_amd64.tar.gz"
+      sha256 "8a54739150d0bdebe22384fef5ab25df5ab246a5f016236dce4c4ef78305dc7e"
 
       def install
         bin.install "tempural"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/weslien/tempural/releases/download/v0.0.2/tempural_0.0.2_darwin_arm64.tar.gz"
-      sha256 "c7f450b5089d06d9fdcdbba7f1a3267bc329928e3f05279d1db677dc4e754cad"
+      url "https://github.com/weslien/tempural/releases/download/v0.0.3/tempural_0.0.3_darwin_arm64.tar.gz"
+      sha256 "61ce6f842beeb9cf94212198f8addf37b5223237e1db51c261b0b0b4986c0217"
 
       def install
         bin.install "tempural"
@@ -30,8 +30,8 @@ class Tempural < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/weslien/tempural/releases/download/v0.0.2/tempural_0.0.2_linux_amd64.tar.gz"
-        sha256 "b66cb467d1dac72e52ff7851325bf34027580fe592676fe271437eca100a3602"
+        url "https://github.com/weslien/tempural/releases/download/v0.0.3/tempural_0.0.3_linux_amd64.tar.gz"
+        sha256 "6ec0f65f7617ad1a2ea3aa73e6605475ad8735d278911ef9574587c182e7f3eb"
 
         def install
           bin.install "tempural"
@@ -40,8 +40,8 @@ class Tempural < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/weslien/tempural/releases/download/v0.0.2/tempural_0.0.2_linux_arm64.tar.gz"
-        sha256 "a1fae899413c91c8223bfe003bb62f7f87fb06f030842a47ffea587efba8dc17"
+        url "https://github.com/weslien/tempural/releases/download/v0.0.3/tempural_0.0.3_linux_arm64.tar.gz"
+        sha256 "445a893b2d9b0931c5c6c5195f06c73a5d116fc9e7bc1a47920f6b65023018aa"
 
         def install
           bin.install "tempural"
